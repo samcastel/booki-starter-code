@@ -19,12 +19,9 @@ html{
 
 header{
     display: flex;
-    border: 1px solid black; 
-    width: 100vw;
-    max-height: 100vh;
 }
 
-.haut:hover{
+.choix:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding-top: 5px;
