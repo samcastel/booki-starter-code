@@ -16,15 +16,43 @@
 html{
     scroll-behavior: smooth;
 }
+/********* Header *********/
 
 header{
     display: flex;
 }
-
 .choix:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding-top: 5px;
+}
+.logo{
+    width: 161.09px;
+    height: 79px;
+    padding: 15px 0px;
+    gap: 10px;
+}
+header img{
+    width: 61.09px;
+    height: 19px;
+    color: #0065FC;
+}
+
+nav{
+    width: 344px;
+    height: 35px;
+    margin-left: 750px;
+    padding: 0 50px;
+    gap: 68px;
+    align-items: flex-end;
+    display: flex;
+}
+
+.heb-mars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
 }
 
 .hebergements h3{
@@ -46,28 +74,11 @@ button:hover{
 }
 
 
-header img{
-    width: 61.09px;
-    height: 19px;
-    color: #0065FC;
-}
 
-.logo{
-    width: 161.09px;
-    height: 79px;
-    padding: 15px 0px;
-    gap: 10px;
-}
 
-nav{
-    width: 344px;
-    height: 35px;
-    margin-left: 750px;
-    padding: 0 50px;
-    gap: 68px;
-    align-items: flex-end;
-    display: flex;
-}
+
+
+
 
 .rech{
     display: flex;
@@ -184,7 +195,10 @@ a {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 30px;
+    
+    
 }
 
 .hebergements-and-populaires section {
@@ -192,6 +206,7 @@ a {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    height: 614px;
 }
 
 .card-title, card .card-subtitle{
@@ -208,6 +223,7 @@ a {
     gap: 30px;
     border-radius: 15px;
     background-color: #F2F2F2;
+    border: 1px solid black;
 }
 
 .hebergements img{
@@ -220,7 +236,7 @@ a {
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 30%;
 }
 
 .populaires-title {
@@ -232,6 +248,7 @@ a {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    
 }
 
 .populaires-cards img {
@@ -248,6 +265,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    
 }
 
 .populaires-cards .card-title {
@@ -262,6 +280,8 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+/********* Footer *********/
 
 footer{
     display: flex;
@@ -312,12 +332,22 @@ footer{
 
 .photo-hebergement{
     width: 250.33px;
-    height: 227.25px;
+    height: 207.25px;
     border-radius: 20px;
     padding: 0px 0px 15px 0px;
-    gap: 4px;
-    background-color: #ffffff;
+    background-color: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start;
 }
+.descr{
+    height: 64.25px;
+    row-gap: 4px;
+    padding: 0 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
  .fig{
     padding: 16px 19px 20px 19px;
     font-weight: 700;
