@@ -19,6 +19,11 @@ body {
     justify-content: center;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -77,11 +82,14 @@ input::placeholder{
 }
 
  #pin{
+    display: flex;
     height: 49px;
     width: 50px;
     border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
     border: 1px solid gray;
+    justify-content: center;
+    align-items: center;
 }
 
 .form{
@@ -152,13 +160,24 @@ button:hover{
     margin-top: 26px;
 }
 
+.bouton-filtre{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+#familial{
+    width: 134px;
+}
 /*********   *********/
 
 
 
-
-
-
+#aff-plus:hover{
+    border-bottom: 2px solid #0065FC;
+    color: #0065FC
+}
 
 
 .heb-mars{
@@ -193,10 +212,7 @@ button:hover{
     box-sizing: border-box;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
+
 
 .section-title {
     margin: 0;
@@ -256,7 +272,6 @@ a {
     width: 70%;
     display: flex;
     flex-wrap: wrap;
-    height: 630px;
     padding: 30px;
     gap: 30px;
     border-radius: 15px;
@@ -320,24 +335,35 @@ a {
     margin-bottom: 5px;
 }
 
+.select-photo:hover{
+    color: #0065fc;
+ }
 
 
 .activités{
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
     height: 30%;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 35px;
     font-weight: 700;
     font-size: 16px;
     line-height: 18.78px;
+    padding: 30px;
 }
 
-.act-mars{
-    margin-top: 65px;
+.activités h2{
+    margin-bottom: 0;
 }
+
+ .photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+ }
+
 
 .activités img{
     height: 380px;
