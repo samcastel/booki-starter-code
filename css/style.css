@@ -87,12 +87,11 @@ input::placeholder{
     width: 50px;
     border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
-    border: 1px solid gray;
     justify-content: center;
     align-items: center;
 }
 
-.form{
+.form, form{
     display: flex;
     align-items: center;
 }
@@ -100,10 +99,19 @@ input::placeholder{
 form input{
     height: 45px;
     width: 205px;
+    
 }
 
+.search-input{
+    border: 1px solid #F2F2F2;
+    border-radius: 0;
+    border-right: none;
+}
+
+
+
 #bout-rech{
-    height: 50px;
+    height: 49px;
     width: 132px;
     border-radius: 0 15px 15px 0;
     border: 1px;
@@ -183,7 +191,7 @@ button:hover{
 .heb-mars{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     row-gap: 30px;
 }
 
@@ -480,6 +488,14 @@ footer{
 @media (max-width: 767.98px) {
     /* ... */
     body{
+        flex-direction: column;
+    }
+
+    .heb-mars{
+        justify-content: center;
+    }
+
+    .button{
         flex-direction: column;
     }
 }
