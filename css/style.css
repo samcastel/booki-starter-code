@@ -4,19 +4,14 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body{
+    margin: 0;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
-}
-
-.fa-solid {
-    color: var(--main-color);
-}
-
-body {
-    display: flex;
-    justify-content: center;
 }
 
 a {
@@ -26,6 +21,23 @@ a {
 
 html{
     scroll-behavior: smooth;
+}
+
+.select-photo:hover{
+    color: var(--main-color);
+ }
+
+/*********   *********/
+
+
+
+/********* MAIN-CONTAINER *********/
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
 /*********   *********/
@@ -42,13 +54,11 @@ header{
     width: 161.09px;
     height: 79px;
     padding: 15px 0px;
-    gap: 10px;
 }
 
 header img{
     width: 61.09px;
     height: 19px;
-    color: #0065FC;
 }
 
 nav{
@@ -62,9 +72,19 @@ nav{
 }
 
 nav a:hover{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
     padding-top: 5px;
+}
+
+/*********   *********/
+
+
+
+/********* HEADLINE *********/
+
+.sous-titre{
+    font-size: smaller;
 }
 
 /*********   *********/
@@ -86,7 +106,7 @@ input::placeholder{
     height: 49px;
     width: 50px;
     border-radius: 15px 0 0 15px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     justify-content: center;
     align-items: center;
 }
@@ -103,7 +123,7 @@ form input{
 }
 
 .search-input{
-    border: 1px solid #F2F2F2;
+    border: 1px solid var(--main-bg-color);
     border-radius: 0;
     border-right: none;
 }
@@ -115,7 +135,7 @@ form input{
     width: 132px;
     border-radius: 0 15px 15px 0;
     border: 1px;
-    background-color: #0065fc;
+    background-color: var(--main-color);
     color: white;
     padding: 15px 16px;
     font-weight: 700;
@@ -124,8 +144,18 @@ form input{
     text-align: center;
 }
 
+.form button{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    width: 49px;
+    height: 49px;
+    border-radius: 15px;
+    padding: 15px 16px 15px 16px; 
+    display: none;
+}
+
 #bout-rech:hover{
-    background-color: #deebff;
+    background-color: var(--filter-bg-color);
     color: black;
     transition: 0.2s;
 }
@@ -134,7 +164,35 @@ form input{
 
 
 
-/********* FILTRES   *********/
+/********* ÉTOILES ET EURO *********/
+.euro {
+    font-weight: 700;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+.neutral-star {
+    color: var(--main-bg-color);
+}
+
+/*********   *********/
+
+
+
+/********* TITRES PHOTOS *********/
+
+.card-title {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/*********   *********/
+
+
+
+/********* FILTRES *********/
 
 .filtre{
     font-weight: 700;
@@ -155,14 +213,13 @@ button{
 }
 
 button:hover{
-    background-color: #deebff;
+    background-color: var(--filter-bg-color);
     transition: 0.2s;
 }
 
-.button{
+.button, .bout1, .bout2{
     display: flex;
     gap: 15px;
-    margin-top: 50px;
     align-items: center;
     margin-bottom: 26px;
     margin-top: 26px;
@@ -178,88 +235,24 @@ button:hover{
 #familial{
     width: 134px;
 }
+
 /*********   *********/
 
 
 
-#aff-plus:hover{
-    border-bottom: 2px solid #0065FC;
-    color: #0065FC
-}
-
-
-.heb-mars{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    row-gap: 30px;
-}
-
-.hebergements h3{
-    align-content: flex-start;
-}
-
-
-
-
-
-.centre-v{
-    font-size: smaller;
-}
-
-
-
-
-
-
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-
-
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-    margin: 8px 0;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.neutral-star {
-    color: var(--main-bg-color)
-}
-
-
-
-/****** HEBERGEMENTS AND POPULAIRES ***********/
+/****** DIVISION [HEBERGEMENTS À MARSEILLE ET LES PLUS POPULAIRES] ***********/
 
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-evenly;
-    gap: 30px;    
+    gap: 30px;   
 }
+
+/*********   *********/
+
+
+
+/********* SECTION HEBERGEMENTS À MARSEILLE + SECTION LES PLUS POPULAIRES *********/
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
@@ -268,13 +261,19 @@ button:hover{
     box-sizing: border-box;
 }
 
-.card-title, card .card-subtitle{
+.card-title, .card-subtitle{
     align-content: center;
 }
 
+.card-txt{
+    padding: 0 15px 0 15px;
+ }
+
+/*********   *********/
 
 
-/****** HEBERGEMENTS ***********/
+
+/********* HÉBERGEMENTS À MARSEILLE *********/
 
 .hebergements {
     width: 70%;
@@ -283,8 +282,17 @@ button:hover{
     padding: 30px;
     gap: 30px;
     border-radius: 15px;
-    background-color: #F2F2F2;
-    border: 1px solid black;
+    background-color: var(--main-bg-color);
+}
+
+.photo-hebergement{
+    width: 250.33px;
+    height: 207.25px;
+    border-radius: 20px;
+    background-color: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start;
 }
 
 .hebergements img{
@@ -295,9 +303,27 @@ button:hover{
     object-fit: cover;
 }
 
+.heb-mars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+}
+
+#aff-plus:hover{
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.hebergements h3{
+    align-content: flex-start;
+}
+
+/*********   *********/
 
 
-/****** POPULAIRES ***********/
+
+/********* LES PLUS POPULAIRES *********/
 
 .populaires {
     width: 30%;
@@ -307,6 +333,21 @@ button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
 }
 
 .populaires-cards .card {
@@ -343,10 +384,11 @@ button:hover{
     margin-bottom: 5px;
 }
 
-.select-photo:hover{
-    color: #0065fc;
- }
+/*********   *********/
 
+
+
+/********* ACTIVITÉS À MARSEILLE *********/
 
 .activités{
     display: flex;
@@ -358,20 +400,28 @@ button:hover{
     font-weight: 700;
     font-size: 16px;
     line-height: 18.78px;
-    padding: 30px;
+    justify-content: space-evenly;
+    border: 1px solid red;
 }
 
 .activités h2{
     margin-bottom: 0;
 }
 
- .photos{
+.photos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
+    border: 1px solid red;
  }
 
+ .photos-activités{
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px lightgray ;
+    width: 297.5px;
+    height: 439px;
+}
 
 .activités img{
     height: 380px;
@@ -382,35 +432,14 @@ button:hover{
     object-position: center;
 }
 
-.photos-activités{
-    border-radius: 20px;
-    box-shadow: 0px 3px 15px lightgray ;
-    width: 297.5px;
-    height: 439px;
-}
-
-
-
-.photo-hebergement{
-    width: 250.33px;
-    height: 207.25px;
-    border-radius: 20px;
-    background-color: #ffffff; 
-    display: flex;
-    flex-direction: column;
-    align-content:flex-start;
-}
-
- .fig{
+.fig{
     padding: 16px 19px 20px 19px;
     font-weight: 700;
     size: 16px;
     line-height: 18.78px;
  }
 
- .card-txt{
-    padding: 0 15px 0 15px;
- }
+/*********   *********/
 
 
 
@@ -421,7 +450,7 @@ footer{
     width: 100%;
     height: 163px;
     justify-content: space-around;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     margin-top: 5%;
     gap: 30px;
     font-weight: 400;
@@ -447,17 +476,95 @@ footer{
 
 
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/********** LE CODE CI-DESSOUS CORRESPOND À LA VERSION RESPONSIVE UNIQUEMENT **********/
 
-/****** Media queries ***********/
+
+/****** MEDIA QUERIES ***********/
+
 /* Medium devices (tablets, less/equal than 1024px) */
+
+/********* GENERAL *********/
+
+    /*********   *********/
+
+    
+    /********* MAIN-CONTAINER *********/
+
+    /*********   *********/
+
+    
+    /********* HEADER  *********/
+
+    /*********   *********/
+
+
+
+    /********* HEADLINE *********/
+
+    /*********   *********/
+
+
+
+    /********* BARRE DE RECHERCHE *********/
+
+    /*********   *********/
+
+
+    /********* ÉTOILES ET EURO *********/
+
+    /*********   *********/
+
+
+    /********* TITRES PHOTOS *********/
+
+    /*********   *********/
+
+
+    /********* FILTRES *********/
+
+    /*********   *********/
+
+
+    /****** DIVISION [HEBERGEMENTS À MARSEILLE ET LES PLUS POPULAIRES] ***********/
+
+    /*********   *********/
+
+
+    /********* SECTION HEBERGEMENTS À MARSEILLE + SECTION LES PLUS POPULAIRES *********/
+
+    /*********   *********/
+
+
+    /********* HÉBERGEMENTS À MARSEILLE *********/
+
+    /*********   *********/
+
+
+    /********* LES PLUS POPULAIRES *********/
+
+    /*********   *********/
+
+
+    /********* ACTIVITÉS À MARSEILLE *********/
+
+    /*********   *********/
+
+
+    /********* FOOTER *********/
+
+    /*********   *********/
+
+
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+        align-items: center;
     }
 
     .hebergements {
         width: 100%;
+        padding: O;
+        align-items: center;
     }
 
     .populaires {
@@ -484,18 +591,184 @@ footer{
     }
 }
 
+/*********   *********/
+
+
+
 /* Small devices (phones, less than 768px) */
+
+
 @media (max-width: 767.98px) {
-    /* ... */
-    body{
+
+    /********* GENERAL *********/
+
+    /*********   *********/
+
+    
+    /********* MAIN-CONTAINER *********/
+
+    .main-container{
+        padding: 0;
+    }
+
+    /*********   *********/
+
+    
+    /********* HEADER  *********/
+
+    header{
         flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 61.09px;
+        height: 19px;
+    }
+
+    nav{
+        display: flex;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    nav a:hover{
+        color: var(--main-color);
+        border-top: none;
+        border-bottom: 2px solid var(--main-color);
+        padding-top: 5px;
+        
+    }
+
+
+    /*********   *********/
+
+
+
+    /********* HEADLINE *********/
+
+    /*********   *********/
+
+
+
+    /********* BARRE DE RECHERCHE *********/
+
+    #bout-rech{
+        display: none;
+    }
+
+    .form button{
+        display: flex;
+    }
+
+    .form{
+        justify-content: center;
+    }
+
+    /*********   *********/
+
+
+    /********* ÉTOILES ET EURO *********/
+
+    /*********   *********/
+
+
+    /********* TITRES PHOTOS *********/
+
+    /*********   *********/
+
+
+    /********* FILTRES *********/
+
+    .button{
+        display: inline-block;
+    }
+
+    #familial, .bouton-filtre{
+        width: 162.5px;
+        font-size: 14px;
+        line-height: 16.44px;
+    }
+
+    #familial{
+        padding-right: 48px;
+    }
+
+
+
+    /*********   *********/
+
+
+    /****** DIVISION [HEBERGEMENTS À MARSEILLE ET LES PLUS POPULAIRES] ***********/
+
+    .hebergements-and-populaires section{
+        border-radius: 0;
+    }
+
+    /*********   *********/
+
+
+    /********* SECTION HEBERGEMENTS À MARSEILLE + SECTION LES PLUS POPULAIRES *********/
+
+    /*********   *********/
+
+
+    /********* HÉBERGEMENTS À MARSEILLE *********/
+
+    .hebergements{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
     }
 
     .heb-mars{
         justify-content: center;
-    }
-
-    .button{
+        padding: 0;
         flex-direction: column;
     }
+
+    /*********   *********/
+
+
+    /********* LES PLUS POPULAIRES *********/
+
+    .populaires-cards{
+        display: block;
+    }
+
+    /*********   *********/
+
+
+    /********* ACTIVITÉS À MARSEILLE *********/
+
+    .photos{
+        justify-content: center;
+    }
+
+    /*********   *********/
+
+
+    /********* FOOTER *********/
+
+    footer{
+        flex-direction: column;
+        height: 471px;
+        padding: 30px;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    /*********   *********/
+    .main-container{
+        justify-content: center;
+        padding: 0;
+    }
+
 }
+
+/*********   *********/
