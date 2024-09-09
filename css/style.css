@@ -569,13 +569,13 @@ footer{
     }
 
     
-    .photos{
+    /*.photos{
         width: 100%;
-        flex-direction: column;
-    }
+    }*/
 
     .activités{
         width: 100%;
+        
     }
 
     .main-container{
