@@ -36,8 +36,7 @@ html{
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 /*********   *********/
@@ -91,6 +90,16 @@ nav a:hover {
 
 .sous-titre{
     font-size: smaller;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.headline h3{
+    margin-bottom: 8px;
+}
+
+#logements-500{
+    margin-top: 35px;
 }
 
 /*********   *********/
@@ -227,7 +236,7 @@ button:hover{
     display: flex;
     gap: 15px;
     align-items: center;
-    margin-bottom: 26px;
+    margin-bottom: 0px;
     margin-top: 26px;
 }
 
@@ -288,14 +297,13 @@ button:hover{
     width: 70%;
     display: flex;
     flex-wrap: wrap;
-    /*padding: 30px;*/
     gap: 30px;
     border-radius: 15px;
     background-color: var(--main-bg-color);
 }
 
 .photo-hebergement{
-    width: 250.33px;
+    width: 260.33px;
     height: 207.25px;
     border-radius: 20px;
     background-color: #ffffff;
@@ -305,6 +313,7 @@ button:hover{
     padding: 5px;
     box-sizing: border-box;
 }
+
 
 .hebergements img{
     width: 250.33px;
@@ -317,7 +326,7 @@ button:hover{
 .heb-mars{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     row-gap: 30px;
 }
 
@@ -501,77 +510,13 @@ footer{
 
 /* Medium devices (tablets, less/equal than 1024px) */
 
-/********* GENERAL *********/
-
-    /*********   *********/
-
-
-    /********* MAIN-CONTAINER *********/
-
-    /*********   *********/
-
-
-    /********* HEADER  *********/
-
-    /*********   *********/
 
 
 
-    /********* HEADLINE *********/
 
-    /*********   *********/
+    
 
-
-
-    /********* BARRE DE RECHERCHE *********/
-
-    /*********   *********/
-
-
-    /********* ÉTOILES ET EURO *********/
-
-    /*********   *********/
-
-
-    /********* TITRES PHOTOS *********/
-
-    /*********   *********/
-
-
-    /********* FILTRES *********/
-
-    /*********   *********/
-
-
-    /****** DIVISION [HEBERGEMENTS À MARSEILLE ET LES PLUS POPULAIRES] ***********/
-
-    /*********   *********/
-
-
-    /********* SECTION HEBERGEMENTS À MARSEILLE + SECTION LES PLUS POPULAIRES *********/
-
-    /*********   *********/
-
-
-    /********* HÉBERGEMENTS À MARSEILLE *********/
-
-    /*********   *********/
-
-
-    /********* LES PLUS POPULAIRES *********/
-
-    /*********   *********/
-
-
-    /********* ACTIVITÉS À MARSEILLE *********/
-
-    /*********   *********/
-
-
-    /********* FOOTER *********/
-
-    /*********   *********/
-
+   
 
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -614,7 +559,40 @@ footer{
     .fig {
         padding: 25.5px 19px;
     }
-}
+    
+    .sous-titre{
+        margin-bottom: 35 0;
+    }
+
+    .populaires{
+        margin-top: 0;
+    }
+
+    
+    .photos{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .activités{
+        width: 100%;
+    }
+
+    .main-container{
+        padding: 0;
+        margin-left: 50px;
+    }
+
+    .heb-mars{
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+     .select-photo{
+        width: 30%;
+     }
+
 
 /*********   *********/
 
@@ -623,7 +601,7 @@ footer{
 /* Small devices (phones, less than 768px) */
 
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 
     /********* GENERAL *********/
 
@@ -751,7 +729,7 @@ footer{
     /********* HÉBERGEMENTS À MARSEILLE *********/
 
     .hebergements{
-        flex-wrap: nowrap;
+        /*flex-wrap: nowrap;*/
         flex-direction: column;
         justify-content: center;
         background-color: white !important;
@@ -772,6 +750,10 @@ footer{
 
     .descr{
         margin-top: 30px;
+    }
+
+    .afficher{
+        align-self: flex-start;
     }
 
 
@@ -864,6 +846,15 @@ footer{
 
    .card-subtitle, .card-rating, .card-title{
     padding: 0 15px 0 15px;
+   }
+
+   .filtre{
+    margin-top: 35px;
+    margin-bottom: 20px;
+   }
+
+   .bout1{
+    margin-top: 0;
    }
 
 }
