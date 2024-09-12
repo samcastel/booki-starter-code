@@ -754,7 +754,6 @@ footer{
     }
 
     .activités{
-        display: flex;
         justify-content: center;
     }
 
@@ -765,8 +764,9 @@ footer{
         flex-direction: column;
         height: 471px;
         padding: 30px;
-        justify-content: center;
+        /*justify-content: center;*/
         margin-left: 0;
+        width: 100%;
     }
 
     /*********   *********/
