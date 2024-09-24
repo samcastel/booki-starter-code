@@ -1,0 +1,82 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.select-photo:hover{
+    color: var(--main-color);
+ }
+
+
+ /********* MAIN-CONTAINER *********/
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/********* ÉTOILES ET EURO *********/
+
+.euro {
+    font-weight: 700;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+.neutral-star {
+    color: var(--main-bg-color);
+}
+
+
+
+
+/********* TITRES PHOTOS *********/
+
+.card-title {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/****** MEDIA QUERIES ***********/
+
+/* Small devices (phones, less than 768px) */
+
+
+@media (max-width: 768px) {
+
+
+    /********* MAIN-CONTAINER *********/
+
+    .main-container{
+        padding: 0;
+    }
+
+}
