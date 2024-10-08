@@ -74,21 +74,15 @@ form input{
 
 @media (max-width: 768px) {
 
+#bout-rech{
+    display: none;
+}
 
+.form button{
+    display: flex;
+}
 
-
-
-    /********* BARRE DE RECHERCHE *********/
-
-    #bout-rech{
-        display: none;
-    }
-
-    .form button{
-        display: flex;
-    }
-
-    .form{
-        width: 335px;
-    }
+.form{
+    width: 335px;
+}
 }

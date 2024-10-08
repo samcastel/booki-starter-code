@@ -1,4 +1,4 @@
-/********* ACTIVITÉS À MARSEILLE *********/
+/********* ACTIVITÉS À MARSEILLE *********
 
 .activités{
     display: flex;
@@ -22,7 +22,7 @@
     gap: 30px;
  }
 
-.select-photo {
+.select-photo3 {
     width: 297.5px;
 }
 

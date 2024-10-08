@@ -24,3 +24,25 @@
 }
 
 /****** MEDIA QUERIES ***********/
+
+/* Medium devices (tablets, less/equal than 1024px) */
+
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hebergements-and-populaires section{
+        width: 100%;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+
+
+@media (max-width: 768px){
+    .hebergements-and-populaires{
+        flex-direction: column;
+    }
+}

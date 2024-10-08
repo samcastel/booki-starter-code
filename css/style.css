@@ -11,10 +11,7 @@
         align-items: center;
     }
 
-    .hebergements {
-        width: 100%;
-        align-items: center;
-    }
+    
 
     .populaires {
         width: 100%;
@@ -66,10 +63,7 @@
         margin-left: 50px;
     }
 
-    .heb-mars{
-        display: flex;
-        justify-content: space-between;
-    }
+    
 
      .select-photo{
         width: 30%;
@@ -102,50 +96,9 @@
         display: flex;
         flex-direction: column-reverse;
     }*/
-    
 
-    /********* HÉBERGEMENTS À MARSEILLE *********/
-
-    .hebergements{
-        flex-direction: column;
-        justify-content: center;
-        background-color: white !important;
-    }
-
-    .heb-mars{
-        justify-content: center;
-        padding: 0;
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .hebergements{
-        padding: 0;
-        margin: 0;
-        gap: 0;
-    }
-
-    .descr{
-        margin-top: 30px;
-    }
-
-    .afficher{
-        align-self: flex-start;
-    }
-
-
-
-
-
-    /********* LES PLUS POPULAIRES *********/
-
-    .populaires-cards{
-        display: block;
-    }
 
     
-
-
     /********* ACTIVITÉS À MARSEILLE *********/
 
     .photos{
@@ -157,19 +110,6 @@
     }
 
 
-    /********* FOOTER *********/
-
-    footer{
-        flex-direction: column;
-        height: 471px;
-        padding: 30px;
-        /*justify-content: center;*/
-        margin-left: 0;
-        width: 100%;
-    }
-
-    /*********   *********/
-
 
     .main-container{
         justify-content: center;
@@ -178,9 +118,7 @@
     }
 
 
-   header, .up{
-    background-color: white;
-   }
+   
 
    .hebergements, .activités{
     background-color: white;
@@ -191,15 +129,13 @@
        width: auto;
    }
 
-   .populaires{
-    margin: 0;
-   }
+  
 
-   .select-photo {
+   .select-photo3 {
        width: 100%;
    }
 
-   .select-photo img {
+   .select-photo3 img {
        height: 141px;
    }
 
@@ -229,13 +165,5 @@
     padding: 0 15px 0 15px;
    }
 
-   .filtre{
-    margin-top: 35px;
-    margin-bottom: 20px;
-   }
-
-   .bout1{
-    margin-top: 0;
-   }
 
 }

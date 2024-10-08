@@ -65,3 +65,17 @@
 }
 
 /****** MEDIA QUERIES ***********/
+
+/* Small devices (phones, less than 768px) */
+
+
+@media (max-width: 768px){
+
+    .populaires-cards{
+        display: block;
+    }
+
+    .populaires{
+        margin: 0;
+       }
+}

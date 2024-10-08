@@ -21,7 +21,15 @@ html{
     scroll-behavior: smooth;
 }
 
-.select-photo:hover{
+.select-photo1:hover{
+    color: var(--main-color);
+ }
+
+ .select-photo2:hover{
+    color: var(--main-color);
+ }
+
+ .select-photo3:hover{
     color: var(--main-color);
  }
 
@@ -73,10 +81,10 @@ html{
 @media (max-width: 768px) {
 
 
-    /********* MAIN-CONTAINER *********/
+/********* MAIN-CONTAINER *********/
 
-    .main-container{
-        padding: 0;
-    }
+.main-container{
+    padding: 0;
+}
 
 }

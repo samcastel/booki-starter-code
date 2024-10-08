@@ -1,10 +1,18 @@
 /********* FILTRES *********/
 
+.filtre-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
 .filtre{
     font-weight: 700;
     font-size: 18px;
     line-height: 21.13px;
-    margin-top: 26px;
+    margin-top: 50px;
+    margin-right: 15px;
 }
 
 button{
@@ -51,6 +59,15 @@ button:hover{
 
 .filtre{
     align-self: flex-start;
+    margin-top: 35px;
+ }
+
+ .filtre-container{
+    display: block;
+ }
+
+ .button, .bout1, .bout2{
+    margin-top: 0px;
  }
 
 }
@@ -62,34 +79,43 @@ button:hover{
 
 @media (max-width: 768px) {
 
+.button{
+    display: inline-block;
+    margin: 0;
+}
+
+#familial, .bouton-filtre{
+    width: 162.5px;
+    font-size: 14px;
+    line-height: 16.44px;
+}
+
+#familial{
+    padding-right: 48px;
+}
 
 
-    /********* FILTRES *********/
-
-    .button{
-        display: inline-block;
-        margin: 0;
+.up{
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
     }
 
-    #familial, .bouton-filtre{
-        width: 162.5px;
-        font-size: 14px;
-        line-height: 16.44px;
-    }
+.sous-titre{
+    margin-top: 9px;
+}
 
-    #familial{
-        padding-right: 48px;
-    }
+.bout2{
+    margin-top: 20px;
+}
 
-
-    .up{
-        display: flex;
-        flex-direction: column;
-        align-items: last baseline;
-    }
-
-    .sous-titre{
-        margin-top: 9px;
-    }
+.filtre{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+    
+.bout1{
+    margin-top: 0;
+}
 
 }
