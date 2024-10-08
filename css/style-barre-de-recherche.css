@@ -83,6 +83,10 @@ form input{
 }
 
 .form{
-    width: 335px;
+    width: 340px;
 }
+.search-input{
+    width: 230px;
+}
+
 }

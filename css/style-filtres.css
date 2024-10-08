@@ -98,7 +98,9 @@ button:hover{
 .up{
     display: flex;
     flex-direction: column;
-    align-items: last baseline;
+    /*align-items: last baseline;*/
+    padding-left: 20px;
+    align-items: center;
     }
 
 .sous-titre{
