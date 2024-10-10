@@ -7,23 +7,13 @@
 
 @media (max-width: 1024px) {
     
-
-    .select-photo img {
-        height: 200px;
-    }
-
-    .fig {
-        padding: 25.5px 19px;
-    }
+   
     
     .sous-titre{
         margin-bottom: 35 0;
     }
 
-    .populaires{
-        margin-top: 0;
-    }
-
+   
     
     .activités{
         width: 100%;

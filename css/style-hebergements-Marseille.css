@@ -56,6 +56,8 @@
 
 .select-photo2{
     flex: 1;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    border-radius: 20px;
 }
 
 /****** MEDIA QUERIES ***********/
@@ -105,5 +107,11 @@
 .afficher{
     align-self: flex-start;
 }
+
+.serie{
+    flex-direction: column;
+}
+
+
 
 }

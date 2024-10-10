@@ -36,6 +36,7 @@
 
     .hebergements-and-populaires section{
         width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -49,7 +50,8 @@
 
     .hebergements-and-populaires section{
         border-radius: 0;
-        padding: 20px;
-        
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 30px;
     }
 }
