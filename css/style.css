@@ -6,35 +6,7 @@
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-        align-items: center;
-    }
-
     
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
 
     .select-photo img {
         height: 200px;
@@ -58,11 +30,6 @@
         
     }
 
-    .main-container{
-        padding: 0;
-        margin-left: 50px;
-    }
-
     
 
      .select-photo{
@@ -81,22 +48,6 @@
 
 @media (max-width: 768px) {
 
-    
-
-
-    /****** DIVISION [HEBERGEMENTS À MARSEILLE ET LES PLUS POPULAIRES] ***********/
-
-    .hebergements-and-populaires section{
-        border-radius: 0;
-        padding: 20px;
-        
-    }
-
-    /*.hebergements-and-populaires {
-        display: flex;
-        flex-direction: column-reverse;
-    }*/
-
 
     
     /********* ACTIVITÉS À MARSEILLE *********/
@@ -109,13 +60,6 @@
         justify-content: center;
     }
 
-
-
-    .main-container{
-        justify-content: center;
-        padding: 0;
-        background-color: var(--main-bg-color);
-    }
 
 
    

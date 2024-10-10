@@ -33,6 +33,7 @@
         align-items: center;
     }
 
+
     .hebergements-and-populaires section{
         width: 100%;
     }
@@ -44,5 +45,11 @@
 @media (max-width: 768px){
     .hebergements-and-populaires{
         flex-direction: column;
+    }
+
+    .hebergements-and-populaires section{
+        border-radius: 0;
+        padding: 20px;
+        
     }
 }
