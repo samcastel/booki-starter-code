@@ -1,4 +1,4 @@
-/********* ACTIVITÉS À MARSEILLE *********
+/********* ACTIVITÉS À MARSEILLE *********/
 
 .activités{
     display: flex;
@@ -51,4 +51,48 @@
 
 
  /****** MEDIA QUERIES ***********/
+
+ /* Medium devices (tablets, less/equal than 1024px) */
+
+ @media (max-width: 1024px){
+
+    .fig {
+        padding: 25.5px 19px;
+    }
+
+    .activités{
+        width: 100%;
+    }
+
+ }
+
+ /* Small devices (phones, less than 768px) */
+
+
+@media (max-width: 768px){
+
+    .select-photo3 {
+        width: 100%;
+    }
+ 
+    .select-photo3 img {
+        height: 141px;
+    }
+ 
+    .fig {
+        padding: 20px 19px;
+    }
+
+    .photos{
+        justify-content: center;
+    }
+
+    .activités{
+        justify-content: center;
+        padding: 0 20px;
+        width: auto;
+        background-color: white;
+    }
+
+}
  

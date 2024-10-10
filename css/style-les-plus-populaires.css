@@ -109,5 +109,8 @@
     .populaires{
         margin: 0;
        }
-   
+    .card-subtitle, .card-rating, .card-title{
+        padding: 0 15px 0 15px;
+    }
+
 }
