@@ -104,12 +104,22 @@
     margin-top: 30px;
 }
 
-.afficher{
+.afficher, h2{
     align-self: flex-start;
 }
 
 .serie{
     flex-direction: column;
 }
+
+.photo-hebergement{
+    width: 100%;
+    height: 210px;
+   }
+
+.photo-hebergement img{
+    width: 100%;
+    height: 129px;
+   }
 
 }

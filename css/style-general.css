@@ -4,6 +4,7 @@
 
 body{
     margin: 0;
+    /*padding: 0 20px;*/
 }
 
 :root {
@@ -42,6 +43,8 @@ html{
     padding: 0 50px;
     box-sizing: border-box;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -80,8 +83,9 @@ html{
 @media (max-width: 1024px){
 
     .main-container{
-        padding: 0;
-        margin-left: 50px;
+        padding: 0 50px;
+        /*margin-left: 50px;*/
+        
     }
 }
 
