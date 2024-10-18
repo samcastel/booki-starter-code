@@ -84,10 +84,7 @@ button:hover{
 
 @media (max-width: 768px) {
 
-    button{
-        cursor: none;
-    }
-
+    
 .button{
     display: inline-block;
     margin: 0;
